@@ -42,7 +42,7 @@ private fun MainScreen(
     stateCalculation: Resource<List<List<Archipelago>>>
 ) {
 
-    val titleScreen = remember {
+    val titleScreen = remember(stateCalculation) {
         when (stateCalculation) {
             is Resource.Success -> R.string.title_result
             Resource.Loading -> R.string.text_calculation
