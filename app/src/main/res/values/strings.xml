@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Archipelago</string>
+    <string name="error_calculating">Hubo un error al calcular los archipiélagos</string>
+    <string name="title_select_file">Selecciona el archivo para calcular</string>
+    <string name="text_select_file">Selecciona el archivo</string>
+    <string name="text_calculation">Calculando...</string>
+    <string name="title_result">Resultado del cálculo</string>
+    <string name="text_select_another_file">Selecciona otro archivo</string>
+    <string name="text_result_archipelagos">Prueba %d -> %d Archipiélagos</string>
+    <string name="no_Select_file">No se seleccionó un archivo válido</string>
+</resources>

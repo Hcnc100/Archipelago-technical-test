@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Archipelago</string>
+    <string name="error_calculating">There was an error calculating the archipelagos</string>
+    <string name="title_select_file">Select the file to calculate</string>
+    <string name="text_select_file">Select the file</string>
+    <string name="text_calculation">Calculated...</string>
+    <string name="title_result">Calculation result</string>
+    <string name="text_select_another_file">Select another file</string>
+    <string name="text_result_archipelagos">Test %d -> %d Archipelagoes</string>
+    <string name="no_Select_file">No valid file selected</string>
+</resources>
