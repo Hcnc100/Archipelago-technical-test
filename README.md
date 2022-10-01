@@ -338,3 +338,20 @@ It took me a while to visualize the problem graphically, but this example can he
 
 So has **20 archipelagos** in total
 
+## App
+
+Build a Android app for resolver this.Using Jetpack compose, MVVM, and coroutines for performance app
+
+## Screenshots
+### Splash
+<p>
+  <img src="https://i.imgur.com/JXZSC0v.png" alt="splash" width="200"/>
+</p>
+
+### Home
+<p>
+  <img src="https://i.imgur.com/iIyGD3v.png" alt="select file" width="200"/>
+  <img src="https://i.imgur.com/CjcPhIm.png" alt="select file system" width="200"/>
+  <img src="https://i.imgur.com/hd7Gv3s.png" alt="calculate" width="200"/>
+  <img src="https://i.imgur.com/JMfsAbh.png" alt="rersult file" width="200"/>
+</p>
