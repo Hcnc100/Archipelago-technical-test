@@ -270,7 +270,7 @@ When calculate all Archipelagos only add in list, but as is for ech in all Islan
 
 ### Set
 
-This set is a data structure that no grannted elememts repetable, this is util when create all Island, that the problem no say that no there elements repetable
+This set is a data structure that does not allow repeatable elements, this is useful when all the islands are created, the problem does not say that there are no repeated elements
 
 ```kotlin
  fun calculateListIslands(
