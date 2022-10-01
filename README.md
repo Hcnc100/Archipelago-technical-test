@@ -306,7 +306,7 @@ Or when add all archepelagos
 
 ### And this is all
 
-It took me a while to visualize the problem graphically, but this example can help, has 6 points equisitantes
+It took me a while to visualize the problem graphically, but this example can help,six equidistant points
 
 ![image](https://user-images.githubusercontent.com/46488277/193417082-fc644f24-30dd-4b0a-a21b-b2dae0983b19.png)
 
