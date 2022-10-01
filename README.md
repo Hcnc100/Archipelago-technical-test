@@ -82,6 +82,7 @@ Print a line containing the number of Parkimovil archipelagos in the ocean.
 We need a class for organize information
 
 **Island**
+</br>
 Simple class for save coordinates for any island
 
 ```kotlin
@@ -92,6 +93,7 @@ data class Island(
 
 ```
 **Edge**
+</br>
 Class create by thow Island, this class is util for save the distance betheewn this islands
 
 *distance*
@@ -115,6 +117,7 @@ data class Edge(
 ```
 
 **Archipelago**
+</br>
 Class create by thow Edges
 
 ``` kotlin
