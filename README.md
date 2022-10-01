@@ -71,4 +71,57 @@ Print a line containing the number of Parkimovil archipelagos in the ocean.
 
 </br>
 
+
+### Solution
+
+#### First step
+##### Divide and conquer
+
+#### Definition clases
+
+We need a class for organize information
+
+**Island**
+Simple class for save coordinates for any island
+
+```kotlin
+data class Island(
+  val x:Int,
+  val y:Int
+)
+
+```
+**Edge**
+Class create by thow Island, this class is util for save the distance betheewn this islands
+
+*distance*
+</br>
 <img style="background:white" src="https://user-images.githubusercontent.com/46488277/193378555-4640add9-e4f4-4da2-b08a-a77ac9ec1ec9.png">
+
+
+``` kotlin
+data class Edge(
+    val islandX: Island,
+    val islandY: Island
+) {
+    val distance: Float
+
+    init {
+        val sumDistance =(islandX.x - islandY.x).toFloat().pow(2) + (islandX.y - islandY.y).toFloat().pow(2)
+        distance = sqrt(sumDistance)
+    }
+ }
+
+```
+
+**Archipelago**
+Class create by thow Edges
+
+``` kotlin
+
+data class Archipelago(
+    val edge1: Edge,
+    val edge2: Edge
+)
+
+```
