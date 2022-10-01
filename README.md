@@ -128,3 +128,80 @@ data class Archipelago(
 )
 
 ```
+
+### First problem
+
+The data class is very util, for override function as *toString* or *equals*, and remove elements using *sets*, but this problem is the **Edge** is same another , if has same Islands, but when create edges, maybe has the same order or not, but is the same
+
+``` kotlin
+  
+  val island1 = Island(1,2)
+  val island2 = Island(3,4)
+  
+  val edge1 = Edge(island1,island2)
+  val edge2 = Edge(island1,island2)
+  val edge3 = Edge(island2,island1)
+
+  edge1 == edge2 // true
+  edge2 == edge3 // false
+
+```
+So the need to override is equal and hashcode to manually
+
+**Edge**
+</br>
+
+```kotlin
+
+  override fun equals(other: Any?): Boolean {
+        return when {
+            this === other -> true
+            javaClass != other?.javaClass -> false
+            else -> {
+                other as Edge
+                when {
+                    (islandX == other.islandX) && (islandY == other.islandY) -> true
+                    (islandX == other.islandY) && (islandY == other.islandX) -> true
+                    else -> false
+                }
+            }
+        }
+    }
+
+    override fun hashCode(): Int {
+        var result = islandX.hashCode() + islandY.hashCode()
+        result *= 31
+        return result
+    }
+
+```
+
+**Archepelago**
+</br>
+
+```kotlin
+
+override fun equals(other: Any?): Boolean {
+        return when {
+            this === other -> true
+            javaClass != other?.javaClass -> return false
+            else -> {
+                other as Archipelago
+                when {
+                    edge1 == other.edge1 && edge2 == other.edge2 -> true
+                    edge1 == other.edge2 && edge2 == other.edge1 -> true
+                    else -> false
+                }
+            }
+        }
+    }
+
+    override fun hashCode(): Int {
+        var result = edge1.hashCode() + edge2.hashCode()
+        result *= 31
+        return result
+    }
+
+```
+
+
